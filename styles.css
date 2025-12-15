@@ -7,6 +7,10 @@ body {
     color: #333;
 }
 
+.fondo {
+    background: #cceeff;
+}
+
 /* Estilos de Layout y Contenedores */
 .contenedor-principal { 
     width: 100%; 
@@ -685,4 +689,28 @@ body {
 
 .bordes-redondos {
     border-radius: 20px;
+}
+
+.tabla-sin-bordes {
+    border-collapse: separate;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.botonapp {
+    display: inline-block;
+    padding: 10px 290px;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #00008b;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.botonapp:hover { 
+    background-color: #0056b3; 
 }
