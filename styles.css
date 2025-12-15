@@ -67,12 +67,12 @@ body {
 }
 .fondo-cabecera { 
     background-color: #333; 
-    color: white; 
+    color: #fff; 
 }
 
 /* Enlaces y Menús */
 .enlace-cabecera, .enlace-menu {
-    color: white;
+    color: #fff;
     text-decoration: none;
     margin-right: 10px;
     margin-left: 10px;
@@ -109,7 +109,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: #fff;
     background-color: #007bff;
     border: none;
     border-radius: 5px;
@@ -155,47 +155,47 @@ body {
 
 .plan-basico { 
     font-family: Montserrat; 
-    border: 2px solid green; 
+    border: 2px solid #008000; 
 }
 .plan-basico h3 { 
-    color: green; 
+    color: #008000; 
 }
 .boton-plan-basico { 
-    background-color: green; 
+    background-color: #008000; 
 }
 .boton-plan-basico:hover { 
-    background-color: darkgreen; 
+    background-color: #006400; 
 }
 
 .plan-intermedio { 
     font-family: Montserrat; 
-    border: 2px solid blue; 
+    border: 2px solid #0000ff; 
 }
 .plan-intermedio h3 { 
-    color: blue; 
+    color: #0000ff; 
 }
 .borde-plan-intermedio-3 { 
     border-width: 3px; 
 } 
 .boton-plan-intermedio { 
-    background-color: blue; 
+    background-color: #0000ff; 
 }
 .boton-plan-intermedio:hover { 
-    background-color: darkblue; 
+    background-color: #00008b; 
 }
 
 .plan-avanzado {
     font-family: Montserrat; 
-    border: 2px solid red; 
+    border: 2px solid #ff0000; 
 }
 .plan-avanzado h3 { 
-    color: red; 
+    color: #ff0000; 
 }
 .boton-plan-avanzado { 
-    background-color: red; 
+    background-color: #ff0000; 
 }
 .boton-plan-avanzado:hover { 
-    background-color: darkred; 
+    background-color: #8b0000; 
 }
 
 /* Toggle facturación */
@@ -216,7 +216,7 @@ body {
 
 .selector-radio[type="radio"]:checked + .etiqueta-selector {
     background-color: #00aaff;
-    color: white;
+    color: #fff;
 }
 
 .precio-anual-dato {
@@ -246,7 +246,7 @@ body {
     background-position: center;
 }
 .texto-banner-rutinas {
-    color: white; 
+    color: #fff; 
     font-size: 1.5em; 
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
@@ -314,7 +314,7 @@ body {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
-    color: white;
+    color: #fff;
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 0.8em;
@@ -492,7 +492,7 @@ body {
 
 .categoria-activa {
     background-color: #00aaff !important;
-    color: white !important;
+    color: #fff !important;
 }
 
 .icono-nutricion, .icono-fitness, .icono-bienestar, .icono-tendencias {
@@ -551,7 +551,7 @@ body {
 /* Footer */
 .fondo-pie-pagina {
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 40px 0;
 }
 .enlace-pie, .enlace-social, .enlace-politica {
@@ -559,7 +559,7 @@ body {
     text-decoration: none;
 }
 .enlace-pie:hover, .enlace-social:hover, .enlace-politica:hover {
-    color: white;
+    color: #fff;
     text-decoration: underline;
 }
 .pie-social {
