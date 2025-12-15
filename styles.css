@@ -1,0 +1,655 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #cceeff;
+    color: #333;
+}
+
+/* Estilos de Layout y Contenedores */
+.contenedor-principal { 
+    width: 100%; 
+    max-width: 100%; 
+}
+
+.seccion-contenido {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CLASES DE ESPACIADO */
+.padding-y-10 { 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+.padding-y-50 { 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+.padding-y-100 { 
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+}
+.padding-top-40 { 
+    padding-top: 40px; 
+}
+.padding-top-30 { 
+    padding-top: 30px; 
+}
+.margin-top-20 { 
+    margin-top: 20px; 
+}
+.margin-right-0 { 
+    margin-right: 0 !important; 
+}
+.margin-auto { 
+    margin: auto; 
+}
+.borde-derecha-claro { 
+    border-right: 1px solid #eee; 
+} 
+
+/* CLASES DE TIPOGRAFÍA Y ESTILO */
+.borde-redondo-8 { 
+    border-radius: 8px; 
+}
+.tamano-fuente-30 { 
+    font-size: 30px; 
+}
+.fondo-marquesina { 
+    background-color: #00aaff; 
+    padding: 5px; 
+}
+.fondo-cabecera { 
+    background-color: #333; 
+    color: white; 
+}
+
+/* Enlaces y Menús */
+.enlace-cabecera, .enlace-menu {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.enlace-menu:hover { 
+    text-decoration: none;
+    background: #00aaff;
+}
+
+.enlace-informacion { 
+    color: #007bff; 
+    text-decoration: none; 
+}
+.enlace-informacion:hover { 
+    text-decoration: underline; 
+}
+
+.columna-central {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.centrado { 
+    text-align: center; 
+    align-items: center;
+    align-content: center;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.boton:hover { 
+    background-color: #0056b3; 
+}
+.boton-usuario { 
+    background-color: #00aaff; 
+}
+.boton-invitado { 
+    background-color: #ff6600; 
+}
+.boton-suscripcion {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #00aaff;
+}
+
+/* Formularios (Estilo simple) */
+.formulario-registro { 
+    text-align: left; 
+}
+.input-simple { 
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+.input-suscripcion {
+    padding: 8px;
+    width: 80%;
+    border: none;
+    margin-bottom: 10px;
+}
+
+/* Planes de Precios */
+.contenedor-plan { 
+    padding: 20px; 
+    border-radius: 5px; 
+} 
+
+.plan-basico { 
+    font-family: Montserrat; 
+    border: 2px solid green; 
+}
+.plan-basico h3 { 
+    color: green; 
+}
+.boton-plan-basico { 
+    background-color: green; 
+}
+.boton-plan-basico:hover { 
+    background-color: darkgreen; 
+}
+
+.plan-intermedio { 
+    font-family: Montserrat; 
+    border: 2px solid blue; 
+}
+.plan-intermedio h3 { 
+    color: blue; 
+}
+.borde-plan-intermedio-3 { 
+    border-width: 3px; 
+} 
+.boton-plan-intermedio { 
+    background-color: blue; 
+}
+.boton-plan-intermedio:hover { 
+    background-color: darkblue; 
+}
+
+.plan-avanzado {
+    font-family: Montserrat; 
+    border: 2px solid red; 
+}
+.plan-avanzado h3 { 
+    color: red; 
+}
+.boton-plan-avanzado { 
+    background-color: red; 
+}
+.boton-plan-avanzado:hover { 
+    background-color: darkred; 
+}
+
+/* Toggle facturación */
+.selector-radio[type="radio"] {
+    display: none;
+}
+
+.etiqueta-selector {
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.selector-radio[type="radio"]:checked + .etiqueta-selector {
+    background-color: #00aaff;
+    color: white;
+}
+
+.precio-anual-dato {
+    display: none;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #777;
+    text-decoration: none;
+    font-weight: normal;
+}
+.precio-mensual-dato {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0px;
+}
+
+/* Rutinas */
+.titulo-rutinas { 
+    color: #4CAF50; 
+}
+
+.banner-rutinas {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.texto-banner-rutinas {
+    color: white; 
+    font-size: 1.5em; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Filtros Rutinas */
+.menu-filtros {
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+}
+
+.cabecera-filtro-principal {
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
+.cabecera-filtro-principal h2 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.5em;
+}
+
+.titulo-seccion-filtro {
+    padding: 10px 15px 5px 15px;
+    border-top: 1px solid #eee;
+}
+.titulo-seccion-filtro h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.celda-opcion-filtro {
+    padding: 8px 10px;
+    text-align: center;
+}
+.celda-opcion-filtro-vacia {
+    padding: 8px 10px;
+}
+
+.filtro-opcion {
+    display: block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #555;
+    transition: all 0.2s;
+}
+.filtro-opcion:hover {
+    background-color: #e9f7ff;
+    border-color: #007bff;
+    color: #007bff;
+}
+
+/* Etiquetas de nivel */
+.etiqueta-nivel {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
+.etiqueta-nivel.verde { 
+    background-color: #4CAF50; 
+}
+.etiqueta-nivel.azul { 
+    background-color: #007bff; 
+} 
+.etiqueta-nivel.rojo { 
+    background-color: #f44336; 
+}
+
+.tarjeta-rutina {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+}
+.tarjeta-rutina:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Rutina detalle */
+.seccion-detalles { 
+    margin-bottom: 40px; 
+    text-align: left; 
+}
+
+.video-explicativo {
+    border-radius: 8px;
+}
+
+.texto-nota-video {
+    font-size: 0.9em; 
+    color: #666;
+}
+.texto-nota-guardar {
+    margin-top: 10px; 
+    font-size: 0.9em; 
+    color: #999;
+}
+
+.tabla-ejercicios {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+.tabla-ejercicios th { 
+    background-color: #f2f2f2; 
+    padding: 12px; 
+    text-align: left; 
+    border: none;
+}
+.tabla-ejercicios td { 
+    border-bottom: 1px solid #ddd; 
+    padding: 12px; 
+}
+.tabla-ejercicios tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.consejo-tecnica { 
+    background-color: #e6f7ff; 
+    border-left: 5px solid #00aaff; 
+    padding: 15px; 
+    border-radius: 4px; 
+    margin-top: 15px; 
+}
+.consejo-tecnica ul {
+    margin-top: 10px;
+    padding-left: 25px;
+}
+.consejo-tecnica h4 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.personalizacion-opcion { 
+    list-style: disc; 
+    margin-left: 20px; 
+}
+
+.seccion-cta-detalle {
+    padding-top: 40px;
+}
+.boton-cta-grande {
+    padding: 15px 50px; 
+    font-size: 1.2em;
+}
+
+/* Seguimiento */
+.titulo-seguimiento { 
+    color: #00aaff; 
+}
+.color-seguimiento { 
+    color: #00aaff; 
+}
+.fondo-seguimiento { 
+    background-color: #00aaff; 
+}
+
+/* Comunidad */
+.titulo-comunidad { 
+    color: #ff6600; 
+}
+.boton-comunidad { 
+    background-color: #ff6600; 
+}
+.cabecera-tabla {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+.hilo-foro:hover {
+    background-color: #ffeccf !important; 
+    cursor: pointer;
+}
+.hilo-foro-alterno { 
+    background-color: #f9f9f9; 
+}
+
+/* Blog */
+.titulo-blog { 
+    color: #ff6600; 
+}
+
+.subtitulo-blog {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+}
+
+.descripcion-blog {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.seccion-banner {
+    margin-bottom: 40px;
+}
+.imagen-banner-blog {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.seccion-categorias {
+    margin-bottom: 40px;
+}
+.menu-categorias-blog {
+    max-width: 800px;
+}
+
+.boton-categoria {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    color: #666;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+}
+
+.boton-categoria:hover {
+    background-color: #e0e0e0;
+}
+
+.categoria-activa {
+    background-color: #00aaff !important;
+    color: white !important;
+}
+
+.icono-nutricion, .icono-fitness, .icono-bienestar, .icono-tendencias {
+    margin-right: 5px;
+}
+
+.tarjeta-articulo { 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.tarjeta-articulo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-articulo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.contenido-tarjeta {
+    padding: 15px;
+    text-align: left;
+}
+
+.contenido-tarjeta h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+
+.meta-articulo {
+    font-size: 0.85em;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.boton-secundario {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.boton-secundario:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+.fondo-pie-pagina {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+}
+.enlace-pie, .enlace-social, .enlace-politica {
+    color: #ccc;
+    text-decoration: none;
+}
+.enlace-pie:hover, .enlace-social:hover, .enlace-politica:hover {
+    color: white;
+    text-decoration: underline;
+}
+.pie-social {
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    font-size: 14px;
+}
+.pie-derechos {
+    padding-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+.pie-separador { 
+    margin: 0 10px; 
+}
+
+/* Colores Iconos */
+.color-facebook{
+    color: #4469b8;
+}
+
+.color-x{
+    color: #000;
+}
+
+.color-instagram{
+    color: #ff0000;
+}
+
+/* Responsive Blog */
+@media screen and (max-width: 768px) {
+
+    .titulo-blog {
+        font-size: 2em;
+    }
+    .subtitulo-blog {
+        font-size: 1.3em;
+    }
+
+    .menu-categorias-blog tr td {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 5px;
+    }
+    
+    .seccion-articulos table tr td {
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin-bottom: 25px;
+    }
+    
+    .tarjeta-articulo {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Responsive Filtros */
+@media screen and (max-width: 600px) {
+    .menu-filtros tr td {
+        display: block;
+        width: 100% !important;
+        text-align: left;
+    }
+
+    .celda-opcion-filtro {
+        padding: 5px 15px;
+        text-align: left;
+    }
+
+    .celda-opcion-filtro .filtro-opcion {
+        display: inline-block;
+        margin: 5px 5px 5px 0;
+    }
+
+    .celda-opcion-filtro-vacia {
+        display: none;
+    }
+}
+
+.imagen-principal-articulo{
+    padding-left: 380px;
+}
+
+.imagen-articulo-dos{
+    padding-left: 350px;
+    width: 700px;
+}
+.imagen-articulo-tres{
+    padding-left: 450px;
+    width: 500px;
+}
