@@ -653,3 +653,15 @@ body {
     padding-left: 450px;
     width: 500px;
 }
+
+.fondo-envio-uno {
+    background-color: #90ee90; 
+}
+
+.fondo-envio-dos {
+    background-color: #add8e6; 
+}
+
+.fondo-envio-tres {
+    background-color: #ffa07a; 
+}
